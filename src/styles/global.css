@@ -1,0 +1,110 @@
+/* ===== CSS Reset & Base ===== */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --color-bg: #ffffff;
+  --color-bg-card: #f8fafc;
+  --color-text: #1e293b;
+  --color-text-muted: #64748b;
+  --color-accent: #2563eb;
+  --color-accent-hover: #1d4ed8;
+  --color-border: #e2e8f0;
+  --color-tag-bg: #eff6ff;
+  --color-tag-text: #2563eb;
+  --color-code-bg: #f1f5f9;
+  --font-body: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-mono: 'JetBrains Mono', 'Fira Code', monospace;
+  --max-width: 720px;
+  --max-width-wide: 960px;
+}
+
+html {
+  font-family: var(--font-body);
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  line-height: 1.7;
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  color: var(--color-accent);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+a:hover {
+  color: var(--color-accent-hover);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+code {
+  font-family: var(--font-mono);
+  background: var(--color-code-bg);
+  padding: 0.15em 0.4em;
+  border-radius: 4px;
+  font-size: 0.9em;
+}
+
+pre {
+  padding: 1.25rem;
+  border-radius: 8px;
+  overflow-x: auto;
+  margin: 1.5rem 0;
+}
+
+pre code {
+  background: none;
+  padding: 0;
+}
+
+/* ===== Prose (blog content) ===== */
+.prose {
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.prose h1 { font-size: 2.25rem; margin: 2rem 0 1rem; font-weight: 800; }
+.prose h2 { font-size: 1.6rem; margin: 2rem 0 0.75rem; font-weight: 700; color: var(--color-text); }
+.prose h3 { font-size: 1.25rem; margin: 1.5rem 0 0.5rem; font-weight: 600; }
+.prose p { margin-bottom: 1.25rem; }
+.prose ul, .prose ol { margin: 1rem 0 1.25rem 1.5rem; }
+.prose li { margin-bottom: 0.5rem; }
+.prose blockquote {
+  border-left: 3px solid var(--color-accent);
+  padding-left: 1rem;
+  color: var(--color-text-muted);
+  margin: 1.5rem 0;
+  font-style: italic;
+}
+
+/* ===== Utilities ===== */
+.container {
+  max-width: var(--max-width-wide);
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+}
