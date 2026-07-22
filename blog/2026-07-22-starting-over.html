@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Starting over on my website, and why the first one died &middot; Michael Tsai</title>
+  <meta name="description" content="I let an AI write my entire site. It shipped in a weekend and I never opened it again. Here is what I think actually happened.">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="masthead">
+    <div class="wrap masthead__inner">
+      <a class="masthead__name" href="/">Michael Tsai</a>
+      <nav class="masthead__nav" aria-label="Main">
+        <a href="/">About</a>
+        <a href="/projects/">Projects</a>
+        <a href="/blog/" aria-current="page">Blog</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <article class="wrap prose">
+
+      <p class="meta">
+        <time datetime="2026-07-22">22 Jul 2026</time>
+        <span class="meta__sep">/</span>
+        <span>4 min read</span>
+      </p>
+
+      <h1>Starting over on my website, and why the first one died</h1>
+
+      <p class="lede">I let an AI write my entire site. It shipped in a weekend and I never opened it again.</p>
+
+      <p>Two months ago I had a personal website. It existed, it loaded, the layout held up on a phone. By any reasonable definition I had shipped something. I described almost none of it to anyone, added nothing to it, and last week I could not have told you how its navigation was built without opening the files and reading them.</p>
+
+      <p>So I deleted it and started over. This post is me trying to say why, in a way that is useful rather than just self-critical.</p>
+
+      <h2>The obvious diagnosis is wrong</h2>
+
+      <p>The easy story is "AI wrote bad code." It did not. The code was fine. Cleaner than what I would have produced on my own, probably.</p>
+
+      <p>The problem was that I could not find my way back into it. Every file was a set of decisions somebody else had made for reasons I had never been asked to consider. When I opened the folder to add a project, the first task was not "write the project." It was "reverse-engineer my own website." That is a much larger task, and it is the kind of task you keep deciding to do tomorrow.</p>
+
+      <p>A site you do not want to open is not a site. It is a screenshot with a domain name attached.</p>
+
+      <h2>What I think actually happened</h2>
+
+      <p>I optimised for the wrong finish line. I treated "live on the internet" as the goal, and by that measure v1 was a total success. But the actual goal was a place I would keep adding to for years. Against that measure it failed on day three and I did not notice for two months.</p>
+
+      <p>The other thing worth naming: generating the site did not remove the work of understanding it. It moved that work to a later date, one I had not scheduled and did not want to spend a Saturday on. I felt fast in the moment and paid for it in a currency I did not realise I was borrowing.</p>
+
+      <h2>What I am doing differently</h2>
+
+      <p>Same tool, different job. I am still using AI constantly on v2, but the request has changed from "build this" to "explain this, then watch me build it." When I ask why a page uses <code>&lt;article&gt;</code> instead of <code>&lt;div&gt;</code>, I get an answer I keep. When I ask for a finished page, I get a page I own on paper and not in my head.</p>
+
+      <p>Three rules I am holding myself to:</p>
+
+      <ul>
+        <li><strong>No file I cannot explain.</strong> If I could not walk a friend through what a line does, it does not go in.</li>
+        <li><strong>Smallest version that works, then add.</strong> v1 had features I never once used. v2 launches with three pages.</li>
+        <li><strong>Every addition goes through the full workflow.</strong> Branch, commit, merge. Even for a typo. The point is the reps, not the ceremony.</li>
+      </ul>
+
+      <h2>The uncomfortable part</h2>
+
+      <p>I do not know yet whether this works. That is the honest position. It is entirely possible I am rationalising a rebuild I wanted for other reasons, and that in three months this site is as dormant as the last one.</p>
+
+      <p>The difference is that this time the record is public and dated, so if it goes quiet, that is visible too. Which is roughly the point of building in public: it makes the failure mode legible instead of private.</p>
+
+      <p>Check back and see.</p>
+
+      <div class="related">
+        <p class="related__label">Related project</p>
+        <ul>
+          <li><a href="/projects/personal-site.html">michaelttsai.com</a></li>
+        </ul>
+      </div>
+
+    </article>
+  </main>
+
+  <footer class="colophon">
+    <div class="wrap">
+      Hand-written HTML and CSS. <a href="https://github.com/michaelttsai">Source on GitHub</a>
+    </div>
+  </footer>
+
+</body>
+</html>
